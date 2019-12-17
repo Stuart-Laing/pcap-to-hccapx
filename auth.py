@@ -8,6 +8,7 @@ class EAPOL:
         self.dst_mac = data[4:10]
 
         ieee_packet = dpkt.ieee80211.IEEE80211(data)
+
         print(ieee_packet.data)
 
         self.key_descriptor_type = ieee_packet.data[12:13]
