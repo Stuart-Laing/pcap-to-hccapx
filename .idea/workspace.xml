@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="519b0c4d-8e6f-47ff-bf2a-126357bf2c15" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result_file.hccapx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,26 +94,26 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1189" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576616606124" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576666219496">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576675302984">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576666219496" />
-    <state width="1830" height="145" key="GridCell.Tab.0.bottom" timestamp="1576670700475">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576675302984" />
+    <state width="1830" height="145" key="GridCell.Tab.0.bottom" timestamp="1576671742297">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="145" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700475" />
-    <state width="1830" height="145" key="GridCell.Tab.0.center" timestamp="1576670700474">
+    <state width="1830" height="145" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576671742297" />
+    <state width="1830" height="145" key="GridCell.Tab.0.center" timestamp="1576671742296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="145" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700474" />
-    <state width="1830" height="145" key="GridCell.Tab.0.left" timestamp="1576670700474">
+    <state width="1830" height="145" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576671742296" />
+    <state width="1830" height="145" key="GridCell.Tab.0.left" timestamp="1576671742296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="145" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700474" />
-    <state width="1830" height="145" key="GridCell.Tab.0.right" timestamp="1576670700475">
+    <state width="1830" height="145" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576671742296" />
+    <state width="1830" height="145" key="GridCell.Tab.0.right" timestamp="1576671742296">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="145" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700475" />
+    <state width="1830" height="145" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576671742296" />
     <state width="1830" height="344" key="GridCell.Tab.1.bottom" timestamp="1576667273941">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -132,10 +134,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576614834037" />
-    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576669257790">
+    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576684309078">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576669257790" />
+    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576684309078" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576622922303">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
