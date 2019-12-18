@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_file.hccapx" beforeDir="false" afterPath="$PROJECT_DIR$/result_file.hccapx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -92,34 +92,50 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1189" y="301" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576616606124" />
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576615217180">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1576666219496">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576615217180" />
-    <state width="1830" height="278" key="GridCell.Tab.0.bottom" timestamp="1576665480697">
+    <state x="776" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1576666219496" />
+    <state width="1830" height="145" key="GridCell.Tab.0.bottom" timestamp="1576670700475">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576665480697" />
-    <state width="1830" height="278" key="GridCell.Tab.0.center" timestamp="1576665480696">
+    <state width="1830" height="145" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700475" />
+    <state width="1830" height="145" key="GridCell.Tab.0.center" timestamp="1576670700474">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576665480696" />
-    <state width="1830" height="278" key="GridCell.Tab.0.left" timestamp="1576665480696">
+    <state width="1830" height="145" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700474" />
+    <state width="1830" height="145" key="GridCell.Tab.0.left" timestamp="1576670700474">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576665480696" />
-    <state width="1830" height="278" key="GridCell.Tab.0.right" timestamp="1576665480696">
+    <state width="1830" height="145" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700474" />
+    <state width="1830" height="145" key="GridCell.Tab.0.right" timestamp="1576670700475">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="1830" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576665480696" />
+    <state width="1830" height="145" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576670700475" />
+    <state width="1830" height="344" key="GridCell.Tab.1.bottom" timestamp="1576667273941">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1576667273941" />
+    <state width="1830" height="344" key="GridCell.Tab.1.center" timestamp="1576667273940">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1576667273940" />
+    <state width="1830" height="344" key="GridCell.Tab.1.left" timestamp="1576667273940">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1576667273940" />
+    <state width="1830" height="344" key="GridCell.Tab.1.right" timestamp="1576667273941">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state width="1830" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1576667273941" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1576614834037">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1576614834037" />
-    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576624694109">
+    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576669257790">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576624694109" />
+    <state x="657" y="245" width="662" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1576669257790" />
     <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1576622922303">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
