@@ -41,8 +41,10 @@ client_mac = eapol_packets[1].src_mac
 client_nonce = eapol_packets[1].key_nonce
 
 eapol = eapol_packets[1].eapol
-eapol_length = chr(len(eapol)).encode()[1:] + b"\x00"  # This goes before eapol
-# TODO eapol is fucked
+eapol_length = chr(len(eapol)).encode() + b"\x00"
+
+print(len(eapol))
+excess_zeros = b"\x00" * (256 - len(eapol))
 
 output_file = open("result_file.hccapx", "wb")
 output_file.write(file_signature)
@@ -58,11 +60,5 @@ output_file.write(client_mac)
 output_file.write(client_nonce)
 output_file.write(eapol_length)
 output_file.write(eapol)
+output_file.write(excess_zeros)
 output_file.close()
-
-exit()
-
-excess_zeros = b"\x00" * 0
-print(excess_zeros)
-print(len(eapol))
-print(len(excess_zeros))
