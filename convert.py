@@ -1,46 +1,33 @@
 import dpkt
-import sys
 import argcurse
 
 import auth
 
 # TODO
-# ########## Have it dynamically find the ESSID
-# Proper Command Line Arguments
-# ########## Have it work with files that contain more than just eapol packets
-# ########## Have it work with files with multiple 4 way handshakes
 # Allow specification of different message pairs
 # Allow specification of specific eapol handshakes
 # Handle WPA 1
-# Verify given arguments
-
-
-HELP_MSG = """Usage: convert.py [options] -i input_zip_file
-
-Options:
- |                 Flags              |          Description          | Required |      Default     |        
- +------------------------------------+-------------------------------+----------+------------------+
- |  -i --input-pcap <file path>       | Input pcap file path          | Yes      | None             |
- |  -o --output-file <file path>      | Output hccapx file path       | No       | ./results.hccapx |
- |  -e --essid <essid>                | ESSID of the ap               | No       | None             |
- |  -mp --message-pair <message pair> | Message pair used in the file | No       | 0                |
- |  -ap --access-mac <mac adr>        | Mac address of access point   | No       | None             |
- |  -cl --client-mac <mac adr>        | Mac address of client         | No       | None             |
- |  -h --help                         | Prints this message
- """
 
 DEFAULT_MSG = """Usage: convert.py [options] -i input_zip_file
 Try -h or --help for more info."""
 
-arg_handler = argcurse.Handler("-h", "--help", HELP_MSG)
+arg_handler = argcurse.Handler("-h", "--help")
 arg_handler.add_default(DEFAULT_MSG)
 
-arg_handler.add_flag("-i", "--input-pcap", has_content=True, required=True)
-arg_handler.add_flag("-o", "--output-file", has_content=True)
-arg_handler.add_flag("-e", "--essid", has_content=True)
-arg_handler.add_flag("-mp", "--message-pair", has_content=True)
-arg_handler.add_flag("-ap", "--access-mac", has_content=True)
-arg_handler.add_flag("-cl", "--client-mac", has_content=True)
+arg_handler.add_flag("-i", "--input-pcap", description="Input pcap file path",
+                     content_help="<file path>", has_content=True, required=True)
+arg_handler.add_flag("-o", "--output-file", description="Output hccapx file path",
+                     content_help="<file path>", has_content=True, default="./results.hccapx")
+arg_handler.add_flag("-e", "--essid", description="ESSID of the ap",
+                     content_help="<essid>", has_content=True)
+arg_handler.add_flag("-mp", "--message-pair", description="Message pair used in the file",
+                     content_help="<message pair>", has_content=True, default="0")
+arg_handler.add_flag("-ap", "--access-mac", description="Mac address of access point",
+                     content_help="<mac adr>", has_content=True)
+arg_handler.add_flag("-cl", "--client-mac", description="Mac address of client",
+                     content_help="<mac adr>", has_content=True)
+
+arg_handler.generate_help_message("Usage: convert.py [options] -i input_zip_file")
 
 arg_handler.compile()
 
@@ -71,7 +58,7 @@ def find_essid(packet_buffer):
     return name, length
 
 
-pcap_path = arg_handler.results["-i"]
+pcap_path = arg_handler.results["-i"].flag_content
 
 pcap_file = open(pcap_path, "rb")
 contents = dpkt.pcap.Reader(pcap_file)
@@ -131,8 +118,8 @@ write_contents = {"file_signature": b"\x48\x43\x50\x58",
                   "eapol": handshakes[0].m2.eapol,
                   "buffer_zeros": b"\x00" * (256 - len(handshakes[0].m2.eapol))}
 
-if arg_handler.results["-o"]:
-    output_file_path = arg_handler.results["-o"]
+if arg_handler.results["-o"].flag_used:
+    output_file_path = arg_handler.results["-o"].flag_content
 else:
     output_file_path = "results.hccapx"
 
