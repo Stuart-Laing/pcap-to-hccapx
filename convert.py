@@ -3,6 +3,7 @@ import argcurse
 
 import auth
 
+
 # TODO
 # Allow specification of different message pairs
 # Allow specification of specific eapol handshakes
