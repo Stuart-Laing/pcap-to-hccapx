@@ -1,3 +1,5 @@
+from .eapol import *
+from .handshake import *
 
 
 # Useful Links
