@@ -19,6 +19,7 @@ class EAPOL:
         # Can do this differently, Each message number has a different set of data and can figure it out that way
         if version == 1 and replay_counter == 1:
             self.message_number = 2
+
         elif version == 1 and replay_counter == 2:
             self.message_number = 4
         elif version == 2 and replay_counter == 1:
@@ -26,6 +27,7 @@ class EAPOL:
         elif version == 2 and replay_counter == 2:
             self.message_number = 3
 
+        self.eapol = buffer[34:115] + (b"\x00" * 16) + buffer[131:]
         self.timestamp = timestamp
 
         if self.message_number in (1, 3):
@@ -38,17 +40,6 @@ class EAPOL:
 
         self.key_nonce = buffer[51:83]
         self.key_mic = buffer[115:131]
-
-    def __repr__(self):
-        output_string = "EAPOL("
-        output_string += f"timestamp={self.timestamp}, "
-        output_string += f"ap_mac={self.ap_mac}, "
-        output_string += f"device_mac={self.device_mac}, "
-        output_string += f"key_nonce={self.key_nonce}, "
-        output_string += f"key_mic={self.key_mic}, "
-        output_string += f"message_number={self.message_number})"
-
-        return output_string
 
     def __str__(self):
         output_string = f"        AP MAC Address    : {byte_mac_to_str(self.ap_mac)}"

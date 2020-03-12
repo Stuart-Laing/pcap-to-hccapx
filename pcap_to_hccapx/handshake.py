@@ -25,3 +25,36 @@ class Handshake:
         output_string += f"\n        End Time          : {convert_timestamp(self.end_time)}"
 
         return output_string
+
+    def create_file(self, essid):
+        output_byte_string = b"\x48\x43\x50\x58"                                 # File Signature
+        output_byte_string += b"\x04\x00\x00\x00"                                # Version
+        output_byte_string += b"\x00"                                            # Message Pair
+        output_byte_string += chr(len(essid)).encode()                           # ESSID Length
+        output_byte_string += essid.encode() + (b"\x00" * (32 - len(essid)))     # ESSID
+        output_byte_string += b"\x02"                                            # Key Version
+        output_byte_string += self.message_2.key_mic                             # Key MIC
+        output_byte_string += self.ap_mac                                        # AP MAC Address
+        output_byte_string += self.message_1.key_nonce                           # AP Nonce
+        output_byte_string += self.device_mac                                    # Device MAC Address
+        output_byte_string += self.message_2.key_nonce                           # Device Nonce
+        output_byte_string += chr(len(self.message_2.eapol)).encode() + b"\x00"  # EAPOL Length
+        output_byte_string += self.message_2.eapol                               # EAPOL
+        output_byte_string += b"\x00" * (256 - len(self.message_2.eapol))        # Buffer Zeroes
+
+        return output_byte_string
+
+# write_contents = {"file_signature": b"\x48\x43\x50\x58",
+#                   "version": b"\x04\x00\x00\x00",
+#                   "message_pair": b"\x00",
+#                   "essid_length": chr(essid_length).encode(),
+#                   "essid": essid + (b"\x00" * (32 - essid_length)),
+#                   "key_ver": b"\x02",
+#                   "key_mic": handshakes[0].m2.key_mic,
+#                   "ap_mac": handshakes[0].m1.src_mac,
+#                   "ap_nonce": handshakes[0].m1.key_nonce,
+#                   "client_mac": handshakes[0].m2.src_mac,
+#                   "client_nonce": handshakes[0].m2.key_nonce,
+#                   "eapol_length": chr(len(handshakes[0].m2.eapol)).encode() + b"\x00",
+#                   "eapol": handshakes[0].m2.eapol,
+#                   "buffer_zeros": b"\x00" * (256 - len(handshakes[0].m2.eapol))}
